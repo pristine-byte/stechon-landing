@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <!-- Dashboard with graph + eye -->
+  <circle cx="40" cy="40" r="36" fill="none" stroke="#e2e8f0" stroke-width="1.5"/>
+  <!-- Monitor -->
+  <rect x="16" y="18" width="48" height="32" rx="3" fill="none" stroke="#f46800" stroke-width="2.5"/>
+  <line x1="16" y1="28" x2="64" y2="28" stroke="#f46800" stroke-width="1.5" opacity="0.5"/>
+  <!-- Graph line -->
+  <polyline points="22,42 30,36 38,39 46,30 54,34 60,32" fill="none" stroke="#f46800" stroke-width="2.5"/>
+  <!-- Monitor stand -->
+  <line x1="40" y1="50" x2="40" y2="56" stroke="#f46800" stroke-width="2"/>
+  <line x1="32" y1="56" x2="48" y2="56" stroke="#f46800" stroke-width="2"/>
+  <!-- Eye -->
+  <path d="M30,66 Q40,58 50,66 Q40,74 30,66 Z" fill="none" stroke="#34d399" stroke-width="1.5"/>
+  <circle cx="40" cy="66" r="3" fill="none" stroke="#34d399" stroke-width="1.5"/>
+</svg>

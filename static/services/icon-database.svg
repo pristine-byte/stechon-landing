@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <!-- Database cylinder -->
+  <circle cx="40" cy="40" r="36" fill="none" stroke="#e2e8f0" stroke-width="1.5"/>
+  <ellipse cx="40" cy="22" rx="20" ry="8" fill="none" stroke="#c4b5fd" stroke-width="2.5"/>
+  <line x1="20" y1="22" x2="20" y2="58" stroke="#c4b5fd" stroke-width="2.5"/>
+  <line x1="60" y1="22" x2="60" y2="58" stroke="#c4b5fd" stroke-width="2.5"/>
+  <ellipse cx="40" cy="40" rx="20" ry="8" fill="none" stroke="#c4b5fd" stroke-width="1.5" stroke-dasharray="4,3" opacity="0.5"/>
+  <ellipse cx="40" cy="58" rx="20" ry="8" fill="none" stroke="#c4b5fd" stroke-width="2.5"/>
+</svg>

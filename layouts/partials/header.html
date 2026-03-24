@@ -1,0 +1,15 @@
+<div class='header header-absolute'>
+  <div class="container">
+    <div class="logo">
+      <a href="{{ .Site.BaseURL }}"><img height={{ .Site.Params.logo.desktop_height }} width={{ .Site.Params.logo.desktop_width }} alt="{{ .Site.Params.logo.alt }}" src="{{ .Site.Params.logo.desktop | relURL }}" /></a>
+    </div>
+    <div class="logo-mobile">
+      <a href="{{ .Site.BaseURL }}"><img height={{ .Site.Params.logo.mobile_height }} width={{ .Site.Params.logo.mobile_width }} alt="{{ .Site.Params.logo.alt }}" src="{{ .Site.Params.logo.mobile | relURL }}" /></a>
+    </div>
+    {{ partial "main-menu.html" . }}
+    <div style="display: flex; align-items: center; gap: 4px; font-size: 13px; font-weight: 600; margin-left: 16px;">
+      {{ range $i, $lang := .Site.Languages }}{{ if $i }} <span style="color: #333;">|</span> {{ end }}<a href="/{{ if ne $lang.Lang "en" }}{{ $lang.Lang }}/{{ end }}" style="text-decoration: none; padding: 2px 6px; border-radius: 3px; {{ if eq $lang.Lang $.Site.Language.Lang }}background: #1a1a2e; color: #fff;{{ else }}color: #333;{{ end }}">{{ if eq $lang.Lang "en" }}🇬🇧{{ else if eq $lang.Lang "ua" }}🇺🇦{{ else if eq $lang.Lang "sk" }}🇸🇰{{ end }} {{ $lang.Label }}</a>{{ end }}
+    </div>
+    {{ partial "hamburger.html" . }}
+  </div>
+</div>

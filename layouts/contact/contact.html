@@ -1,0 +1,78 @@
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}page-contact{{ end }}
+{{ define "header_classes" }}{{ end }}
+
+{{ define "main" }}
+
+{{ partial "hero-image-setheight.html" (dict "background" .Params.heroBackground "heading" .Params.heroHeading "subheading" .Params.heroSubHeading "section" .Section "content" .)}}
+
+<div class="container pt-8 pb-8">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-8 text-center mb-4">
+      <div class="content">
+        {{ .Content }}
+      </div>
+    </div>
+  </div>
+
+  <div class="row justify-content-center" style="gap: 24px 0;">
+
+    <!-- Email card -->
+    <div class="col-12 col-md-3">
+      <div style="background: #f8fafc; border-radius: 12px; padding: 32px 24px; text-align: center; height: 100%; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+        <div style="font-size: 40px; margin-bottom: 12px;">✉️</div>
+        <h3 style="margin-bottom: 8px; font-size: 1.2rem;">Email</h3>
+        <a href="mailto:hello@stechon.online" style="color: #1a1a2e; font-weight: 600; font-size: 1.05rem;">hello@stechon.online</a>
+      </div>
+    </div>
+
+    <!-- Phone / WhatsApp card -->
+    <div class="col-12 col-md-3">
+      <div style="background: #f8fafc; border-radius: 12px; padding: 32px 24px; text-align: center; height: 100%; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+        <div style="font-size: 40px; margin-bottom: 12px;">📱</div>
+        <h3 style="margin-bottom: 8px; font-size: 1.2rem;">{{ if eq .Lang "ua" }}Телефон / WhatsApp{{ else if eq .Lang "sk" }}Telefón / WhatsApp{{ else }}Phone / WhatsApp{{ end }}</h3>
+        <p style="color: #888; margin: 0; font-size: 0.95rem;">{{ if eq .Lang "ua" }}Буде додано пізніше{{ else if eq .Lang "sk" }}Bude pridané neskôr{{ else }}Coming soon{{ end }}</p>
+      </div>
+    </div>
+
+    <!-- Telegram card -->
+    <div class="col-12 col-md-3">
+      <div style="background: #f8fafc; border-radius: 12px; padding: 32px 24px; text-align: center; height: 100%; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+        <div style="margin-bottom: 12px;"><svg width="40" height="40" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="24" fill="#26A5E4"/><path d="M10.9 23.7l21.6-8.3c1-.4 1.9.2 1.6 1.6l-3.7 17.3c-.3 1.2-.9 1.5-1.9 1l-5.2-3.9-2.5 2.4c-.3.3-.5.5-1 .5l.4-5.3 9.6-8.7c.4-.4-.1-.6-.6-.2l-11.9 7.5-5.1-1.6c-1.1-.4-1.1-1.1.2-1.7z" fill="#fff"/></svg></div>
+        <h3 style="margin-bottom: 8px; font-size: 1.2rem;">Telegram</h3>
+        <p style="color: #888; margin: 0; font-size: 0.95rem;">{{ if eq .Lang "ua" }}Буде додано пізніше{{ else if eq .Lang "sk" }}Bude pridané neskôr{{ else }}Coming soon{{ end }}</p>
+      </div>
+    </div>
+
+    <!-- Website card -->
+    <div class="col-12 col-md-3">
+      <div style="background: #f8fafc; border-radius: 12px; padding: 32px 24px; text-align: center; height: 100%; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+        <div style="font-size: 40px; margin-bottom: 12px;">🌐</div>
+        <h3 style="margin-bottom: 8px; font-size: 1.2rem;">Web</h3>
+        <a href="https://stechon.online" style="color: #1a1a2e; font-weight: 600; font-size: 1.05rem;">stechon.online</a>
+      </div>
+    </div>
+
+    <!-- Availability card -->
+    <div class="col-12 col-md-3">
+      <div style="background: #f8fafc; border-radius: 12px; padding: 32px 24px; text-align: center; height: 100%; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+        <div style="font-size: 40px; margin-bottom: 12px;">🕐</div>
+        <h3 style="margin-bottom: 8px; font-size: 1.2rem;">{{ if eq .Lang "ua" }}Доступність{{ else if eq .Lang "sk" }}Dostupnosť{{ else }}Availability{{ end }}</h3>
+        <p style="color: #555; margin: 0;">{{ if eq .Lang "ua" }}Пн — Пт, 9:00 — 18:00{{ else if eq .Lang "sk" }}Po — Pi, 9:00 — 18:00{{ else }}Mon — Fri, 9:00 — 18:00{{ end }}<br><span style="font-size: 0.85em; color: #888;">{{ if eq .Lang "ua" }}Часовий пояс: CET (Центральноєвропейський){{ else if eq .Lang "sk" }}Časové pásmo: CET (Stredoeurópsky čas){{ else }}Time zone: CET (Central European Time){{ end }}</span></p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row justify-content-center mt-6">
+    <div class="col-12 col-md-8 text-center">
+      <div style="background: #1a1a2e; border-radius: 12px; padding: 40px 32px; color: #fff;">
+        <h2 style="color: #fff; margin-bottom: 12px;">{{ if eq .Lang "ua" }}Готові розпочати?{{ else if eq .Lang "sk" }}Pripravení začať?{{ else }}Ready to get started?{{ end }}</h2>
+        <p style="color: #ccc; margin-bottom: 20px;">{{ if eq .Lang "ua" }}Опишіть ваш проєкт і ми відповімо протягом 24 годин.{{ else if eq .Lang "sk" }}Opíšte váš projekt a ozveme sa do 24 hodín.{{ else }}Describe your project and we'll get back to you within 24 hours.{{ end }}</p>
+        <a href="mailto:hello@stechon.online" style="display: inline-block; background: #fff; color: #1a1a2e; padding: 12px 32px; border-radius: 6px; text-decoration: none; font-weight: 700; font-size: 1.05rem;">hello@stechon.online</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{ end }}

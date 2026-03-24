@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <circle cx="40" cy="40" r="36" fill="none" stroke="#e2e8f0" stroke-width="1.5"/>
+  <!-- Code brackets -->
+  <polyline points="28,24 16,40 28,56" fill="none" stroke="#3776ab" stroke-width="3" stroke-linecap="round"/>
+  <polyline points="52,24 64,40 52,56" fill="none" stroke="#3776ab" stroke-width="3" stroke-linecap="round"/>
+  <!-- Python-ish slash -->
+  <line x1="45" y1="22" x2="35" y2="58" stroke="#fbbf24" stroke-width="3" stroke-linecap="round"/>
+</svg>

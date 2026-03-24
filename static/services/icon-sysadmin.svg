@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <!-- Server rack -->
+  <circle cx="40" cy="40" r="36" fill="none" stroke="#e2e8f0" stroke-width="1.5"/>
+  <rect x="22" y="16" width="36" height="48" rx="3" fill="none" stroke="#60a5fa" stroke-width="2.5"/>
+  <line x1="22" y1="30" x2="58" y2="30" stroke="#60a5fa" stroke-width="2"/>
+  <line x1="22" y1="44" x2="58" y2="44" stroke="#60a5fa" stroke-width="2"/>
+  <!-- LEDs -->
+  <circle cx="52" cy="23" r="2" fill="#34d399"/><circle cx="52" cy="37" r="2" fill="#34d399"/><circle cx="52" cy="51" r="2" fill="#fbbf24"/>
+  <!-- Drive lines -->
+  <line x1="27" y1="23" x2="42" y2="23" stroke="#60a5fa" stroke-width="1.5"/>
+  <line x1="27" y1="37" x2="42" y2="37" stroke="#60a5fa" stroke-width="1.5"/>
+  <line x1="27" y1="51" x2="42" y2="51" stroke="#60a5fa" stroke-width="1.5"/>
+</svg>

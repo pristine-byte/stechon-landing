@@ -1,0 +1,27 @@
+{{ define "header_css" }}{{ end }}
+{{ define "body_classes" }}{{ end }}
+{{ define "header_classes" }}{{ end }}
+
+{{ define "main" }}
+
+{{ partial "hero-image-setheight.html" (dict "background" .Params.heroBackground "heading" .Params.heroHeading "subheading" .Params.heroSubHeading "section" .Section "content" .)}}
+
+<div class="container pt-8 pb-8">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-8">
+
+      <p style="margin-bottom: 1rem;"><a href="{{ .Parent.Permalink }}" style="color: #1a1a2e; text-decoration: none; font-weight: 600;">← {{ if eq .Lang "ua" }}Назад до блогу{{ else if eq .Lang "sk" }}Späť na blog{{ else }}Back to Blog{{ end }}</a></p>
+
+      <div style="background: #f8fafc; border-radius: 12px; padding: 36px 40px; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+        <h1 style="margin-bottom: 8px;">{{ .Title }}</h1>
+        <p style="color: #888; font-size: 0.9em; margin-bottom: 24px;">{{ dateFormat "January 2, 2006" .Date }}</p>
+        <div class="content">
+          {{ .Content }}
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+{{ end }}

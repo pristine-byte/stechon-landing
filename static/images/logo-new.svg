@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="40" viewBox="0 0 220 40">
+  <!-- Icon: stylized hexagon with S -->
+  <polygon points="20,2 34,9 34,23 20,30 6,23 6,9" fill="none" stroke="#2563eb" stroke-width="2.5"/>
+  <text x="14" y="21" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="bold" fill="#2563eb">S</text>
+  <!-- Connecting nodes -->
+  <circle cx="34" cy="9" r="2" fill="#2563eb"/>
+  <circle cx="34" cy="23" r="2" fill="#2563eb"/>
+  <circle cx="6" cy="9" r="2" fill="#2563eb"/>
+  <circle cx="6" cy="23" r="2" fill="#2563eb"/>
+  <!-- Company name -->
+  <text x="44" y="24" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="bold" letter-spacing="3" fill="#1e293b">STECHON</text>
+</svg>

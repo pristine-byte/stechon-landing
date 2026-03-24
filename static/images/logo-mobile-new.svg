@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36">
+  <polygon points="18,1 33,9 33,25 18,33 3,25 3,9" fill="none" stroke="#2563eb" stroke-width="2.5"/>
+  <text x="11.5" y="23" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="bold" fill="#2563eb">S</text>
+  <circle cx="33" cy="9" r="2" fill="#2563eb"/>
+  <circle cx="33" cy="25" r="2" fill="#2563eb"/>
+  <circle cx="3" cy="9" r="2" fill="#2563eb"/>
+  <circle cx="3" cy="25" r="2" fill="#2563eb"/>
+</svg>

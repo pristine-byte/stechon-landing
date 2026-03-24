@@ -1,0 +1,93 @@
+baseURL = "https://stechon.online/"
+title = "STECHON"
+theme = "hugo-hero-theme"
+defaultContentLanguage = "en"
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.92.0"
+
+[params]
+  google_analytics_id = ""
+
+  [params.logo]
+    mobile = "images/logo-mobile-new.svg"
+    mobile_height = "36px"
+    mobile_width = "36px"
+    desktop = "images/logo-new.svg"
+    desktop_height = "40px"
+    desktop_width = "220px"
+    alt = "STECHON"
+
+  [params.homepage_meta_tags]
+    meta_description = "STECHON — DevOps consulting, cloud and infrastructure automation, migration, and observability solutions for businesses of all sizes."
+    meta_og_title = "STECHON — DevOps Consulting, Cloud & Infrastructure Services"
+    meta_og_type = "website"
+    meta_og_url = "https://stechon.online"
+    meta_og_description = "Expert DevOps consulting, cloud and infrastructure services, CI/CD, Kubernetes, database management, and observability stack setup."
+    meta_twitter_card = "summary"
+
+[languages]
+  [languages.en]
+    languageCode = "en-us"
+    languageName = "EN"
+    weight = 1
+    contentDir = "content/en"
+
+  [languages.ua]
+    languageCode = "uk"
+    languageName = "UA"
+    weight = 2
+    contentDir = "content/ua"
+
+  [languages.sk]
+    languageCode = "sk"
+    languageName = "SK"
+    weight = 3
+    contentDir = "content/sk"
+
+[languages.en.menus]
+  [[languages.en.menus.main]]
+    name = "Services"
+    url = "/services/"
+    weight = 1
+  [[languages.en.menus.main]]
+    name = "Blog"
+    url = "/blog/"
+    weight = 2
+  [[languages.en.menus.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 3
+
+[languages.ua.menus]
+  [[languages.ua.menus.main]]
+    name = "Послуги"
+    url = "/ua/services/"
+    weight = 1
+  [[languages.ua.menus.main]]
+    name = "Блог"
+    url = "/ua/blog/"
+    weight = 2
+  [[languages.ua.menus.main]]
+    name = "Контакти"
+    url = "/ua/contact/"
+    weight = 3
+
+[languages.sk.menus]
+  [[languages.sk.menus.main]]
+    name = "Služby"
+    url = "/sk/services/"
+    weight = 1
+  [[languages.sk.menus.main]]
+    name = "Blog"
+    url = "/sk/blog/"
+    weight = 2
+  [[languages.sk.menus.main]]
+    name = "Kontakt"
+    url = "/sk/contact/"
+    weight = 3
+
+[permalinks]
+  services = "/:contentbasename/"
